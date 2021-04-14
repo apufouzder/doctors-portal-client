@@ -19,6 +19,7 @@ const Sidebar = () => {
             .then(res => res.json())
             .then(data => setIsDoctor(data))
     }, [])
+
     return (
         <div className="sidebar col-md-2 py-5 px-4 d-flex flex-column justify-content-between" style={{ height: "100vh" }}>
             <ul className="list-unstyled">
