@@ -20,7 +20,7 @@ const Dashboard = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:3020/appointmentsByDate', {
+        fetch('https://lit-fortress-83519.herokuapp.com/appointmentsByDate', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ date: selectedDate, email: user.email })
@@ -35,7 +35,7 @@ const Dashboard = () => {
     const [totalAppointment, setTotalAppointments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3020/appointments')
+        fetch('https://lit-fortress-83519.herokuapp.com/appointments')
             .then(res => res.json())
             .then(data => setTotalAppointments(data))
     }, [])

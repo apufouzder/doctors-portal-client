@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [isDoctor, setIsDoctor] = useState(false)
     console.log('isDoctor', isDoctor);
     useEffect(() => {
-        fetch('http://localhost:3020/isDoctor', {
+        fetch('https://lit-fortress-83519.herokuapp.com/isDoctor', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: user.email })

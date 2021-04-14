@@ -25,7 +25,7 @@ const AddDoctor = () => {
         formData.append('email', info.email);
         formData.append('number', info.number);
 
-        fetch('http://localhost:3020/addDoctor', {
+        fetch('https://lit-fortress-83519.herokuapp.com/addDoctor', {
             method: 'POST',
             body: formData
         })
