@@ -1,0 +1,13 @@
+.new-style{
+    margin: 48px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.box-style{
+    width: 22%;
+    margin-right: 23px;
+    background: springgreen;
+    border-radius: 7px;
+    color: white;
+}
